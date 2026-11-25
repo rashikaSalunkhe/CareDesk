@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.myenv/
+.venv/
+venv/
+.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+
+# Environment and secrets
+.env.*
+!.env.example
+
+# Editor
+.vscode/

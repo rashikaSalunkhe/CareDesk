@@ -1,0 +1,140 @@
+/* Patient Records Table */
+
+.patients-section {
+  overflow: hidden;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 22px;
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+  font-size: 13px;
+}
+
+.patient-table th {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 14px 12px;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.patient-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5eaf0;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.patient-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.admitted {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.discharged {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+/* Search and Filter Controls */
+
+.filter-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 12px;
+  margin: 22px 0;
+  align-items: center;
+}
+
+.filter-container input,
+.filter-container select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #94a3b8;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.filter-container select option {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+.filter-container input::placeholder {
+  color: #64748b;
+}
+
+.filter-container input:focus,
+.filter-container select:focus {
+  outline: 2px solid #087e8b;
+  border-color: #087e8b;
+}
+
+.filter-container button {
+  padding: 12px 16px;
+  background: #087e8b;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .filter-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .filter-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Patient Actions */
+
+.action-btn {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.discharge-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+}
